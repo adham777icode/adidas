@@ -96,9 +96,6 @@ nav ul li:hover::after {
     top: 500%;
     width: 35px;
     height: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
     cursor: pointer;
 }
 
@@ -107,6 +104,21 @@ nav ul li:hover::after {
     height: 3px;
     background-color: #fff;
     transition: all .3s;
+}
+
+.res-menu .one {
+    position: absolute;
+    top: 0;
+}
+
+.res-menu .two {
+    position: absolute;
+    top: 10px;
+}
+
+.res-menu .three {
+    position: absolute;
+    top: 20px;
 }
 
 .mid {
@@ -119,11 +131,11 @@ nav ul li:hover::after {
 }
 
 .fir {
-    rotate: 45deg;
+    rotate: -45deg;
 }
 
 .las {
-    rotate: -45deg;
+    rotate: 45deg;
 }
 
 .menu {

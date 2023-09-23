@@ -19,6 +19,9 @@ let is_clicked = false;
 res_menu.addEventListener('click', () => {
     if (is_clicked === false) {
         is_clicked = true;
+        res_menu.children[0].classList.remove("one");
+        res_menu.children[1].classList.remove("two");
+        res_menu.children[2].classList.remove("three");
         res_menu.children[0].classList.add("fir");
         res_menu.children[1].classList.add("mid");
         res_menu.children[2].classList.add("las");
@@ -28,6 +31,9 @@ res_menu.addEventListener('click', () => {
         res_menu.children[0].classList.remove("fir");
         res_menu.children[1].classList.remove("mid");
         res_menu.children[2].classList.remove("las");
+        res_menu.children[0].classList.add("one");
+        res_menu.children[1].classList.add("two");
+        res_menu.children[2].classList.add("three");
         menu.style.transform = "scaleX(0)";
     }
 });
